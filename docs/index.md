@@ -36,7 +36,7 @@
 | 4/3  |                                         |                                                              |
 | 4/4  | 扩散模型深入（概念讲解+原理）（大约2h） | [b站视频1](https://www.bilibili.com/video/BV14c411J7f2/)；[b站视频2](https://www.bilibili.com/video/BV1xih7ecEMb/)；[学习日志]() |
 | 4/7  | 继续了解扩散模型                        |                                                              |
-|      |                                         |                                                              |
+| 4/9   |  继续推进 以b站视频为主                 |                                               |
 
 todo：
 

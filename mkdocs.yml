@@ -1,46 +1,63 @@
 site_name: 研究日志
 
-# theme: 
-#   name: material  # 设置material for mkdocs主题
-#   language: zh # 设定语言后支持搜索中文
-#   logo: https://cdn.jsdelivr.net/gh/dancehole/image@main/common/favicon.ico # logo路径，删除可以使用默认logo
+theme: 
+  name: material  # 设置material for mkdocs主题
+  language: zh # 设定语言后支持搜索中文
+  logo: https://cdn.jsdelivr.net/gh/dancehole/image@main/common/favicon.ico # logo路径，删除可以使用默认logo
 
-#   # [调色板]明暗主题；注释掉可以显著提升性能,https://wdk-docs.github.io/mkdocs-material-docs/setup/changing-the-colors/
-#   palette:
-#     # primary: blue grey
-#     - scheme: default # 日间模式
-#       primary: indigo # 主要颜色,default:indigo
-#       accent: indigo # 链接等可交互元件的高亮色,default:indigo
-#       toggle:
-#         icon: material/weather-night # 图标
-#         name: 切换至夜间模式 # 鼠标悬浮提示
-#     - scheme: slate # 夜间模式
-#       primary: black 
-#       accent: cyan
-#       toggle:
-#         icon: material/weather-sunny
-#         name: 切换至日间模式
+  # [调色板]明暗主题；注释掉可以显著提升性能,https://wdk-docs.github.io/mkdocs-material-docs/setup/changing-the-colors/
+  palette:
+    # primary: blue grey
+    - scheme: default # 日间模式
+      primary: indigo # 主要颜色,default:indigo
+      accent: indigo # 链接等可交互元件的高亮色,default:indigo
+      toggle:
+        icon: material/weather-night # 图标
+        name: 切换至夜间模式 # 鼠标悬浮提示
+    - scheme: slate # 夜间模式
+      primary: black 
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: 切换至日间模式
 
-#   features:
-#     - navigation.instant  # 采用即使加载，优化访问性能
-#     - navigation.instant.prefetch # 即时抓取，优化访问性能
-#     - navigation.tabs # 上方导航栏,收纳第一级目录
-#     - navigation.tabs.sticky #粘性导航选项卡
-#     # - navigation.sections  # 启用后，顶级分区将会分组（即在侧边栏展开额外一级目录，建议在目录层级较多、但总文件量少的情况下、希望快速访问时采用。优先级：上方导航栏->侧边栏->箭头递归目录[ps:由于样式设计不建议箭头目录太多嵌套]）
-#     - navigation.tracking
-#     - navigation.footer # 页脚 指向下一篇文章
-#     - navigation.top  # 新增导航到顶部的按钮
-#     # - navigation.expand # 默认展开所有小节
-#     # - navigation.prune  # 优化性能（仅渲染每个分类的第一页，默认打开首页，需要高维护成本，需要付费）
-#     - toc.follow  # 锚点跟随，目录跟随页面
-#     - search.suggest  # 搜索建议(仅支持英文)
-#     - search.highlight  # 搜索内容高亮显示（仅支持英文）
+  features:
+    - navigation.instant  # 采用即使加载，优化访问性能
+    - navigation.instant.prefetch # 即时抓取，优化访问性能
+    - navigation.tabs # 上方导航栏,收纳第一级目录
+    - navigation.tabs.sticky #粘性导航选项卡
+    # - navigation.sections  # 启用后，顶级分区将会分组（即在侧边栏展开额外一级目录，建议在目录层级较多、但总文件量少的情况下、希望快速访问时采用。优先级：上方导航栏->侧边栏->箭头递归目录[ps:由于样式设计不建议箭头目录太多嵌套]）
+    - navigation.tracking
+    - navigation.footer # 页脚 指向下一篇文章
+    - navigation.top  # 新增导航到顶部的按钮
+    # - navigation.expand # 默认展开所有小节
+    # - navigation.prune  # 优化性能（仅渲染每个分类的第一页，默认打开首页，需要高维护成本，需要付费）
+    - toc.follow  # 锚点跟随，目录跟随页面
+    - search.suggest  # 搜索建议(仅支持英文)
+    - search.highlight  # 搜索内容高亮显示（仅支持英文）
 
-#   custom_dir: overrides # 扩展主题，支持评论技术栈
+  custom_dir: overrides # 扩展主题，支持评论技术栈
 
-theme:
-    name: readthedocs
-    highlightjs: true
+# 尽管可以试用其他主题，但material主题最完善，搜索支持最好，尽管简单项目也推荐使用
+# theme:
+#     name: readthedocs
+#     highlightjs: true
+#     locale: zh_CN
+
+# theme:
+#     name: mkdocs
+#     highlightjs: true
+#     hljs_languages:
+#         - yaml
+#         - rust
+#     shortcuts:
+#         help: 191 # ?
+#         next: 78 # n
+#         previous: 80 # p
+#         search: 83 # s
+#     navigation_depth: 4
+#     nav_style: light
+#     locale: zh_CN
 
 extra:  # 底部图标 版权跳转
   social:
@@ -50,7 +67,7 @@ extra:  # 底部图标 版权跳转
       link: mailto:<1391755954@qq.com>
 
 # 版权声明 
-copyright: Copyright © dancehole邓仕昊 2023 - 2024 深圳技术大学 ; <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2024302719号</a>
+copyright: Copyright © dancehole邓仕昊; <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2024302719号</a>
 
 # 存储库
 # repo_url: https://github.com/dancehole/codeLabs
@@ -59,6 +76,8 @@ copyright: Copyright © dancehole邓仕昊 2023 - 2024 深圳技术大学 ; <a h
 # 显示文件时间 需要安装库 pip install mkdocs-git-revision-date-localized-plugin,会显著减慢build的速度
 plugins:  # 插件
   - search
+  # - encryptcontent:  # 这个加密的插件很不稳定
+  #     global_password: '123'
   # - git-revision-date-localized:
   #     type: timeago
   #     custom_format: "%d %B %Y"
@@ -72,6 +91,7 @@ plugins:  # 插件
 
 
 markdown_extensions:
+  - smarty
   - admonition  # 提示块
   - footnotes  # 脚注
   - meta  # 定义元数据，通过文章上下文控制，如disqus
@@ -100,6 +120,11 @@ markdown_extensions:
   - pymdownx.tasklist:  # 复选框checklist
       custom_checkbox: true
   - def_list
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 
 
